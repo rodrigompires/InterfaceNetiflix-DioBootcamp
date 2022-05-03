@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Owl Css -->
+    <link rel="stylesheet" href="css/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/Owl/owl.theme.default.min.css">
+
+    <title>Interface Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Netflix</h2>
+            <nav>
+               <a href="#">Inicio</a>
+               <a href="#">Séries</a>
+               <a href="#">Filmes</a>
+               <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">House of Cards</h3>
+                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o 
+                    poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.
+                </p>
+            
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-play"></i>
+                        Assitir Agora
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Mais Informações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-films">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/1.jpg" class="box-filme" id="um" alt="">
+            </div>
+            <div class="item">
+                <img src="images/2.jpg" class="box-filme" id="dois" alt="">
+            </div>
+            <div class="item">
+                <img src="images/3.jpg" class="box-filme" id="tres" alt="">
+            </div>
+            <div class="item">
+                <img src="images/4.jpg" class="box-filme" id="quatro" alt="">
+            </div>
+            <div class="item">
+                <img src="images/5.jpg" class="box-filme" id="cinco" alt="">
+            </div>
+            <div class="item">
+                <img src="images/6.jpg" class="box-filme" id="seis" alt="">
+            </div>
+            <div class="item">
+                <img src="images/7.jpg" class="box-filme" id="sete" alt="">
+            </div>
+            <div class="item">
+                <img src="images/8.jpg" class="box-filme" id="oito" alt="">
+            </div>
+            <div class="item">
+                <img src="images/9.jpg" class="box-filme" id="nove" alt="">
+            </div>
+            <div class="item">
+                <img src="images/10.jpg" class="box-filme" id="dez" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="video">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <iframe id="caixa" width="531" height="298.8" src="https://www.youtube.com/embed/" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>     
+    </div>
+
+    <div id="slider">
+        <img src="images/11.jpg" alt="" >
+        <img src="images/12.jpg" alt="" class="selected">
+        <img src="images/13.jpg" alt="">
+        <img src="images/14.jpg" alt="">
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/91e0be7ef6.js" crossorigin="anonymous"></script>
+    <script src="js/Owl/jquery.min.js"></script>
+    <script src="js/Owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/scripts.js"></script>
+
+    
+</body>
+</html>

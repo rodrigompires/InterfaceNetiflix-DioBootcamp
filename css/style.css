@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+    --vermelho: #e50914;
+    --preto: #141414;
+    --cor-lista-menu: #AAA;
+    --cor-hover-menu: #FFF;
+}
+
+
+
+/* Elementos base */
+
+body {
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container .logo {
+    margin-left: 0.31rem;
+    text-transform: uppercase;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 2.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cor-lista-menu);
+    margin-right: 0.63rem;
+}
+
+header nav a:hover {
+    color: var(--cor-hover-menu);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(../images/House-of-Cards-capa.jpg);
+    background-size: cover;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    transition: .4s ease all;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrosel-films {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.box-filme:hover {
+    opacity: .5;
+    transition: .3s linear all;
+}
+
+#video {
+    display: flex;
+    align-items: center;
+
+    width: 535px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+
+}
+
+.fa-circle-xmark {
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* #slider {
+    width: 20%;
+    height: 50%;
+    border: 1px solid red;
+    
+} */
+
+#slider img {
+    
+
+    position: absolute;
+    object-fit: contain;
+    opacity: 0;
+    width: 20%;
+    height: 40%;
+    transition: .5s linear all;
+    top: 20%;
+    right: 0;
+
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+
+
